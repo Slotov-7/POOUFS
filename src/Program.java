@@ -25,7 +25,7 @@ public class Program {
             System.out.println("3) Reajustar valor dos livros");
             System.out.println("4) Sair");
             int option = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             if (option == 4) {
                 break;

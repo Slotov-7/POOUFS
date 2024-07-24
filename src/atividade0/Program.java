@@ -19,7 +19,7 @@ public class Program {
         vetorDeLivros[9] = new Livros("O Apanhador no Campo de Centeio", "J.D. Salinger", "Companhia das Letras", 224, "Romance", 28.90, 1951);
 
         for (Livros livro : vetorDeLivros) {
-            System.out.println(livro);
+            livro.imprimirDetalhes();
         }
         for (Livros livro : vetorDeLivros) {
             if (livro.anoLancamento() < 2020) {
@@ -28,8 +28,10 @@ public class Program {
                 livro.reajustarValor(8);
             }
         }
+        System.out.println("Após o reajuste de valores:");
+
         for (Livros livro : vetorDeLivros) {
-            System.out.println(livro);
+            livro.imprimirDetalhes();
         }
         scanner.close();
     }

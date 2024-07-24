@@ -84,17 +84,16 @@ public class Livros {
         this.anoLancamento = anoLancamento;
         return this;
     }
-    @Override
-    public String toString() {
-        return "Detalhes do Livro:\n" +
-                "Nome do Livro: '" + (nomeLivro != null ? nomeLivro : "N/A") + "'\n" +
-                "Autor: '" + (autor != null ? autor : "N/A") + "'\n" +
-                "Editora: '" + (editora != null ? editora : "N/A") + "'\n" +
-                "Número de Páginas: " + numPaginas + "\n" +
-                "Estilo: '" + (estilo != null ? estilo : "N/A") + "'\n" +
-                "Valor: " + String.format("%.2f", valor) + "\n";
+    public void imprimirDetalhes() {
+        System.out.println("Detalhes do Livro:");
+        System.out.println("Nome do Livro: '" + (nomeLivro != null ? nomeLivro : "N/A") + "'");
+        System.out.println("Autor: '" + (autor != null ? autor : "N/A") + "'");
+        System.out.println("Editora: '" + (editora != null ? editora : "N/A") + "'");
+        System.out.println("Número de Páginas: " + numPaginas);
+        System.out.println("Estilo: '" + (estilo != null ? estilo : "N/A") + "'");
+        System.out.println("Valor: " + String.format("%.2f", valor));
     }
-    public void reajustarValor( double percentual){
+    public void reajustarValor(double percentual){
         valor += valor * (percentual/100);
     }
 }

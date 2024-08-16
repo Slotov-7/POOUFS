@@ -1,4 +1,4 @@
-package atividade2;
+package atividade2_3.entites;
 
 public class  Ponto {
     protected Double x;
